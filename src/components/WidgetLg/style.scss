@@ -1,0 +1,35 @@
+.widget-lg {
+	flex: 2;
+	margin-left: 1.6rem;
+	padding: 1.6rem 3.2rem;
+	border-radius: 0.8rem;
+
+	box-shadow: var(--box-shadow);
+
+	h4 {
+		text-transform: capitalize;
+		font-size: var(--title-size);
+		margin-bottom: 1.6rem;
+	}
+
+	&__table {
+	}
+
+	&__title {
+	}
+
+	&__item {
+	}
+
+	&__user {
+		img {
+			width: 3.8rem;
+			height: 3.8rem;
+			border-radius: 50%;
+			object-fit: cover;
+		}
+
+		span {
+		}
+	}
+}
