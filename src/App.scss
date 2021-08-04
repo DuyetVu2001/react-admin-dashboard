@@ -1,8 +1,15 @@
-.container {
-	display: flex;
+.app {
+	// overflow: hidden;
 
-	.right {
-		flex: 4;
-		background: lightblue;
+	&__container {
+		display: flex;
+	}
+
+	&__side-bar {
+		flex: 1;
+	}
+
+	&__pages {
+		flex: 5.6;
 	}
 }
