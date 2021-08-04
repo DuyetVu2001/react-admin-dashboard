@@ -12,6 +12,7 @@ import {
 	TrendingUp,
 	WorkOutline,
 } from '@material-ui/icons';
+import { Link } from 'react-router-dom';
 import './style.scss';
 
 const SideBar = () => {
@@ -21,10 +22,12 @@ const SideBar = () => {
 				<div className="side-bar__menu">
 					<h3>Dashboard</h3>
 					<ul className="side-bar__list">
-						<li className="side-bar__item active">
-							<LineStyle className="side-bar__icon" />
-							Home
-						</li>
+						<Link to="/" className="link">
+							<li className="side-bar__item active">
+								<LineStyle className="side-bar__icon" />
+								Home
+							</li>
+						</Link>
 						<li className="side-bar__item">
 							<Timeline className="side-bar__icon" />
 							Analytics
@@ -39,10 +42,12 @@ const SideBar = () => {
 				<div className="side-bar__menu">
 					<h3>Quick Menu</h3>
 					<ul className="side-bar__list">
-						<li className="side-bar__item">
-							<PermIdentity className="side-bar__icon" />
-							Users
-						</li>
+						<Link to="/users" className="link">
+							<li className="side-bar__item">
+								<PermIdentity className="side-bar__icon" />
+								Users
+							</li>
+						</Link>
 						<li className="side-bar__item">
 							<Storefront className="side-bar__icon" />
 							Products
