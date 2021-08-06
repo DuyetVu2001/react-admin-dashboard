@@ -75,15 +75,17 @@ const SideBar = () => {
 								Users
 							</li>
 						</Link>
-						<li
-							className={
-								activeId === 4 ? 'side-bar__item active' : 'side-bar__item'
-							}
-							onClick={() => onClick(4)}
-						>
-							<Storefront className="side-bar__icon" />
-							Products
-						</li>
+						<Link to="/products" className="link">
+							<li
+								className={
+									activeId === 4 ? 'side-bar__item active' : 'side-bar__item'
+								}
+								onClick={() => onClick(4)}
+							>
+								<Storefront className="side-bar__icon" />
+								Products
+							</li>
+						</Link>
 						<li
 							className={
 								activeId === 5 ? 'side-bar__item active' : 'side-bar__item'
