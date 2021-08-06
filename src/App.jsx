@@ -3,9 +3,10 @@ import './App.scss';
 import SideBar from './components/SideBar';
 import TopBar from './components/TopBar';
 import Home from './pages/Home';
+import Product from './pages/Product';
 import ProductList from './pages/ProductList';
-import UserList from './pages/UserList';
 import User from './pages/User';
+import UserList from './pages/UserList';
 
 function App() {
 	return (
@@ -22,6 +23,9 @@ function App() {
 					{/* Pages */}
 					<div className="app__pages">
 						<Switch>
+							<Route path="/product/:id">
+								<Product />
+							</Route>
 							<Route path="/products">
 								<ProductList />
 							</Route>
