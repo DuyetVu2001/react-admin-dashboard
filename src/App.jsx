@@ -5,6 +5,7 @@ import TopBar from './components/TopBar';
 import Home from './pages/Home';
 import ProductList from './pages/ProductList';
 import UserList from './pages/UserList';
+import User from './pages/User';
 
 function App() {
 	return (
@@ -23,6 +24,9 @@ function App() {
 						<Switch>
 							<Route path="/products">
 								<ProductList />
+							</Route>
+							<Route path="/user/:id">
+								<User />
 							</Route>
 							<Route path="/users">
 								<UserList />

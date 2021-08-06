@@ -1,0 +1,172 @@
+.user {
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		h4 {
+			font-size: 3.2rem;
+			font-weight: 600;
+		}
+
+		button {
+			border: none;
+			border-radius: 0.4rem;
+			padding: 1rem 2rem;
+
+			font-size: 1.6rem;
+			font-weight: 600;
+
+			color: white;
+			background: teal;
+			cursor: pointer;
+		}
+	}
+
+	&__container {
+		display: flex;
+		margin-top: 2.4rem;
+		font-size: 1.8rem;
+	}
+
+	&__info,
+	&__update {
+		box-shadow: var(--box-shadow);
+	}
+
+	&__info {
+		flex: 1;
+		padding: 3rem 2.2rem;
+		border-radius: 0.8rem;
+
+		&-top {
+			display: flex;
+			align-items: center;
+			margin-bottom: 2rem;
+
+			img {
+				width: 4rem;
+				height: 4rem;
+				border-radius: 50%;
+				object-fit: cover;
+			}
+
+			div {
+				margin-left: 2rem;
+
+				span {
+					font-weight: 600;
+				}
+
+				p {
+					color: var(--text-color);
+					font-weight: 300;
+				}
+			}
+		}
+
+		&-list {
+			h6 {
+				color: rgb(175, 170, 170);
+				font-size: 1.6rem;
+				font-weight: 700;
+				margin-top: 2.2rem;
+			}
+		}
+
+		&-item {
+			display: flex;
+			align-items: center;
+			margin: 2rem 0;
+			color: var(--text-color);
+			font-weight: 600;
+
+			.icon {
+				margin-right: 1.2rem;
+				font-size: 1.6rem;
+			}
+		}
+	}
+
+	&__update {
+		flex: 2;
+		padding: 3rem 2.2rem 4rem;
+		margin-left: 1.6rem;
+		border-radius: 0.8rem;
+
+		h5 {
+			font-size: var(--title-size);
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__form-update {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__form-left {
+		flex: 1;
+	}
+
+	&__form-item {
+		display: flex;
+		flex-direction: column;
+		margin-top: 1.2rem;
+
+		label {
+			font-size: 1.6rem;
+			margin-bottom: 0.6rem;
+		}
+
+		input {
+			width: 25rem;
+			height: 3rem;
+			font-size: 1.4rem;
+
+			outline: none;
+			border: none;
+			border-bottom: 1px solid black;
+		}
+	}
+
+	&__form-right {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-left: 2.4rem;
+	}
+
+	.form-right__container {
+		display: flex;
+		align-items: center;
+
+		img {
+			width: 12rem;
+			height: 12rem;
+			margin-right: 2rem;
+			border-radius: 1rem;
+			object-fit: cover;
+		}
+
+		.icon {
+			font-size: 2.8rem;
+			cursor: pointer;
+		}
+	}
+
+	&__update-btn {
+		width: 50%;
+		min-width: 15rem;
+		padding: 1rem;
+		border: none;
+		border-radius: 0.6rem;
+
+		font-size: 1.4rem;
+		font-weight: 600;
+		color: white;
+		background-color: darkblue;
+		cursor: pointer;
+	}
+}
