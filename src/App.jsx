@@ -3,6 +3,7 @@ import './App.scss';
 import SideBar from './components/SideBar';
 import TopBar from './components/TopBar';
 import Home from './pages/Home';
+import NewProduct from './pages/NewProduct';
 import NewUser from './pages/NewUser';
 import Product from './pages/Product';
 import ProductList from './pages/ProductList';
@@ -24,6 +25,9 @@ function App() {
 					{/* Pages */}
 					<div className="app__pages">
 						<Switch>
+							<Route path="/new-product">
+								<NewProduct />
+							</Route>
 							<Route path="/product/:id">
 								<Product />
 							</Route>

@@ -1,0 +1,54 @@
+.new-product {
+	h4 {
+		font-size: 3.2rem;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		width: 40rem;
+		margin-top: 1.2rem;
+		margin-right: 3.2rem;
+
+		#file {
+			outline: none;
+			border: none;
+		}
+
+		& > label {
+			margin-bottom: 1.2rem;
+			margin-top: 0.6rem;
+			font-size: 1.8rem;
+			font-weight: 600;
+			color: rgb(151, 150, 150);
+		}
+
+		& > input {
+			font-size: 1.6rem;
+			padding: 1.2rem;
+			border: 0.1rem solid gray;
+			border-radius: 0.5rem;
+		}
+	}
+
+	&__select {
+		height: 4rem;
+		border-radius: 0.5rem;
+		font-size: 1.6rem;
+	}
+
+	&__create-btn {
+		margin-top: 4rem;
+		padding: 1.2rem 2rem;
+		width: 16rem;
+
+		border: none;
+		border-radius: 1rem;
+		font-size: 1.6rem;
+		font-weight: 700;
+
+		color: white;
+		background-color: darkblue;
+		cursor: pointer;
+	}
+}
