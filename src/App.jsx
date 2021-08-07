@@ -3,6 +3,7 @@ import './App.scss';
 import SideBar from './components/SideBar';
 import TopBar from './components/TopBar';
 import Home from './pages/Home';
+import NewUser from './pages/NewUser';
 import Product from './pages/Product';
 import ProductList from './pages/ProductList';
 import User from './pages/User';
@@ -29,12 +30,17 @@ function App() {
 							<Route path="/products">
 								<ProductList />
 							</Route>
+
+							<Route path="/new-user">
+								<NewUser />
+							</Route>
 							<Route path="/user/:id">
 								<User />
 							</Route>
 							<Route path="/users">
 								<UserList />
 							</Route>
+
 							<Route path="/">
 								<Home />
 							</Route>
